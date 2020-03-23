@@ -1,8 +1,13 @@
+//import gifAnimation.*;
+
 import java.lang.*;
 import processing.video.*;
 import cvimage.*;
 import org.opencv.core.*;
 import org.opencv.imgproc.Imgproc;
+
+//int counter = 0;
+//GifMaker ficherogif;
 
 Capture cam;
 CVImage img, auximg;
@@ -31,6 +36,9 @@ void setup() {
   colorIntensity =180;
   blurIntesity = 1;
   flag = 0;
+  
+  //ficherogif = new GifMaker( this , "animacion.gif") ;
+  //ficherogif.setRepeat(0);
 }
 
 void draw() {  
@@ -92,6 +100,7 @@ void draw() {
       }
     }
   }
+  //ficherogif.addFrame();
 }
 
 void loadImages() {
